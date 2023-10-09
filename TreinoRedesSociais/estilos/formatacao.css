@@ -1,39 +1,74 @@
 @charset "UTF-8";
 
-*{padding: 0px;
+*{
+    padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 html body{
     height: 100vh;
     width: 100vw;
-    background-color: black;
 }
 
 body{
-    background: url('../../imagens/fundo-madeira.jpg') top center no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
-main{
+    position: relative;
+    background: url(../../imagens/fundo-madeira.jpg) top center no-repeat;
+    width: 100vw;
     height: 100vh;
-    position: relative;/*DEIXANDO O MAIN RELATIIVO P PODER POSICIONAR OQUE ESTIVER DENTRO DELE */
+    
     
 }
 
-section#telefoneCh{
+section#moldura-telefone{
     position: absolute;
+    background: url('../../imagens/frame-iphone\ .png');
+    width: 311px;
+    height: 627px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 627px;
-    width: 311px;
-    background: url(../../imagens/frame-iphone\ .png) no-repeat;
+   
+}
+
+iframe#tela{
+position: relative;
+top: 80px;
+left: 22px;
+
+height: 471px;
+width: 269px;
+
+  
+}
+
+section#redesSociaisCh{
+    text-align: right;
+}
+
+
+
+section#redesSociaisCh img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+    margin: 10px;
+    box-sizing: border-box;/*PARA A BORDA FAZER PARTE DA CAIXA*/
+    
     
 }
+
+section#redesSociaisCh img:hover{
+    border: 2px solid red;
+    transform: translate( -5px, -5px);/*DANDO MOVIMENTO AO PASSAR POR CIMA DO BOTÃO*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);/*MUDANDO O TAMANHO DA SOMBRA QUANDO O BOTÃO SE MOVIMENTA*/
+    transition: transform .5s, border 3s;/*TEMPO DE MOVIMENTAÇÃO DOS BOTÕES E DA BORDA DO BOTÃO*/
+    
+    
+}
+
+
 
 
 
